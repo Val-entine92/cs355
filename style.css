@@ -1,0 +1,11 @@
+*{
+    background-color: cadetblue;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color:rgb(233, 239, 245);
+    text-decoration: underline;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
