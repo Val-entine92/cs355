@@ -1,11 +1,96 @@
 *{
-    background-color: cadetblue;
+  margin: 1px 1px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:monospace,sans-serif;
+  font-size:1.4rem; 
+}
+body{
+display:flexbox;
+position:relative;
+background-image:url("anita-austvika-FKryiLxgpGQ-unsplash.jpg");
+background-size: cover;
 }
 h1{
+    background-color:#c0dd92;
     display: flex;
+    margin-bottom: 1%;
     justify-content: center;
-    color:rgb(233, 239, 245);
+    color:rgb(9, 10, 10);
+    text-transform: uppercase;
     text-decoration: underline;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::selection{
+    background: rgb(131, 192, 228);
+}
+
+.container{
+background-color: black;
+  position:relative;
+  color: #c0dd92;
+  align-content: center;
+ justify-content: center;
+ text-align: center;
+ 
+ 
+}
+button{
+    align-items: center;
+    border-radius:1em;
+    margin: 20px;
+    color:rgb(59, 52, 52);
+    background-color:#c0dd92;
+}
+button:hover{
+    cursor:pointer;
+    color:hsl(65, 100%, 2%);
+}
+a{
+    background-color:#c0dd92;
+    color:rgb(56, 53, 53);
+    border-radius: 1em;
+    text-decoration: none;
+    width: 12em;
+}
+.links{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.time{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: justify;
+    margin: 5em;
+    background-color: #c0dd92;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #c0dd92;
+}
+.end{
+    flex:0 0 180px;
+    display:flex;
+    align-items: center;
+}
+.end .right{
+    justify-content: flex-end;
+}
+.logo{
+    margin-right: 1rem;
+}
+.title{
+    flex : 0 0 auto;
+}
+.menu{
+    display: flex;
 }
