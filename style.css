@@ -2,17 +2,33 @@
   margin: 1px 1px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:monospace,sans-serif;
-  font-size:1.4rem; 
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size:1.2em; 
 }
-body{
+.bg-Img{
 display:flexbox;
 position:relative;
 background-image:url("anita-austvika-FKryiLxgpGQ-unsplash.jpg");
 background-size: cover;
 }
+#map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 h1{
-    background-color:#c0dd92;
+    flex-direction: row;
     display: flex;
     margin-bottom: 1%;
     justify-content: center;
@@ -23,19 +39,69 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.logo-container img{
+    background-color: #c0dd92;
+    width:1.72em;
+    max-width:5rem;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-radius: 50%;
+    margin-bottom: 14%;
+}
 ::selection{
     background: rgb(131, 192, 228);
 }
+ul{
+    display: flex;
+    flex-flow:row;
+    list-style-type: none;  
+}
+ul li{
+    padding:8px 0;
+}
+ul li a{
+    
+    border-radius: 1em;
+    text-decoration: none; 
+    width: 12em;
+    --fill:#c0dd92;
+    background: local;
+    position: relative;
+    display: block;
+    padding:4px 0;;
+    -webkit-text-stroke: 2px var(--fill);
+    background:linear-gradient(var(--fill) 0 100%) left/0 no-repeat;
+    background-clip: text;
+    color:transparent;
+    transition:.1s linear;
+}
+ul li a:hover,:is(:active){
+    -webkit-text-stroke-color: black;
+    background-size:100%;
+    color: black;
+    
+}
+.links{
+    margin:0%;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+}
 
 .container{
-background-color: black;
+margin-top: 2%;
+background-color:#252525;
   position:relative;
   color: #c0dd92;
   align-content: center;
- justify-content: center;
- text-align: center;
- 
- 
+  justify-content: center;
+  text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
 }
 button{
     align-items: center;
@@ -48,49 +114,120 @@ button:hover{
     cursor:pointer;
     color:hsl(65, 100%, 2%);
 }
-a{
-    background-color:#c0dd92;
-    color:rgb(56, 53, 53);
-    border-radius: 1em;
-    text-decoration: none;
-    width: 12em;
-}
-.links{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
 .time{
     display: flex;
     align-items: stretch;
     justify-content: center;
     text-align: justify;
     margin: 5em;
-    background-color: #c0dd92;
+    color: #c0dd92;
+    background-color: #252525;
 }
 
-nav{
-    display:flex;
+.container2{
+    height:100vh;
+    width:100vw;
+    max-height: 800px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin:0 auto;
+    margin-top: -20%;
+    flex-direction: row;
+    max-width:1200px;
+    min-height:600px;
+    min-width:100px;
+}
+.border{
+    height:300px;
+    width:260px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+.border:hover{
+    border: 1px solid #fff;
+    overflow: visible;
+}
+.card:hover h2{
+  /*transform: rotate(-1turn); 
+ /*transform: rotate3d(0, 1, 4, 180deg);*/
+    z-index: 1;
+    color: darkgreen;
+    background-color: #fff;
+}
+.card img{
+    max-width:300px;
+    z-index: 0;
+
+}
+.card{
+    height:379px;
+    width:300px;
+    border-radius: 10px;
+    background: #252525;
+    display: flex;
+    overflow: hidden;
     justify-content: center;
-    background: #c0dd92;
-}
-.end{
-    flex:0 0 180px;
-    display:flex;
     align-items: center;
+    position: relative;
+    transition:  0.8s;
 }
-.end .right{
-    justify-content: flex-end;
+.card>h2{
+    color: #fff;
+    position: absolute;
+
+    
 }
-.logo{
-    margin-right: 1rem;
+.animate__animated{
+animation-duration: 3s;
+animation-iteration-count:1;
+animation-timing-function:ease-in-out;
+animation-play-state:running;
+
 }
-.title{
-    flex : 0 0 auto;
+@media screen and (max-width:600px) {
+    .card{
+        display: flex;        
+    }
+    .container2{
+    height:100vh;
+    width:100vw;
+    max-height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    margin-top: -20%;
+    flex-direction: column;
+    max-width:1200px;
+    min-height:600px;
+    min-width:100px;
 }
-.menu{
+}
+#google_translate_element{
     display: flex;
 }
+.bg-Img2{
+    background-color: #252525;
+    color:burlywood;
+}
+#hello{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+#hello img{
+    width:50%;
+    height:18em;
+    border-radius: 1%;
+}
+.bg-Img3{
+    background-color: darkolivegreen;
+}
+
+
+
+

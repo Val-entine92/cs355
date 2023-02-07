@@ -1,6 +1,8 @@
 'use strict'
 
 const $=document.querySelector.bind(document);
+const time=document.getElementsByClassName(".time");
+
 
 
 function clickMe(){
@@ -19,6 +21,9 @@ setInterval(//runs the function at at interval of 1 second
   });
 
 }
+
+
+
 
 
 
