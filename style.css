@@ -57,7 +57,7 @@ ul li a{
     
     border-radius: 1em;
     text-decoration: none; 
-    width: 12em;
+    width: 10em;
     --fill:#c0dd92;
     background: local;
     position: relative;
@@ -67,7 +67,7 @@ ul li a{
     background:linear-gradient(var(--fill) 0 100%) left/0 no-repeat;
     background-clip: text;
     color:transparent;
-    transition:.1s linear;
+    transition:1s linear;
 }
 ul li a:hover,:is(:active){
     -webkit-text-stroke-color: black;
