@@ -9,17 +9,10 @@
 }
 .bg-Img{
 display:flexbox;
-position:relative;
-background-image:url("anita-austvika-FKryiLxgpGQ-unsplash.jpg");
-background-size: cover;
-}
-#map {
-  height: 100%;
+
+
 }
 
-/* 
- * Optional: Makes the sample page fill the window. 
- */
 html,
 body {
   height: 100%;
@@ -101,7 +94,8 @@ background-color:#252525;
 }
 .buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    margin-bottom: 1em;
 }
 button{
     align-items: center;
@@ -109,17 +103,21 @@ button{
     margin: 20px;
     color:rgb(59, 52, 52);
     background-color:#c0dd92;
+    justify-content: space-evenly;
 }
 button:hover{
     cursor:pointer;
     color:hsl(65, 100%, 2%);
 }
 .time{
+    display: none;
+}
+.time.active{
     display: flex;
     align-items: stretch;
     justify-content: center;
     text-align: justify;
-    margin: 5em;
+    margin-bottom: 5em;
     color: #c0dd92;
     background-color: #252525;
 }
@@ -209,7 +207,7 @@ animation-play-state:running;
 #google_translate_element{
     display: flex;
 }
-.bg-Img2{
+.bg-Img{
     background-color: #252525;
     color:burlywood;
 }
@@ -224,9 +222,7 @@ animation-play-state:running;
     height:18em;
     border-radius: 1%;
 }
-.bg-Img3{
-    background-color: darkolivegreen;
-}
+
 
 
 
