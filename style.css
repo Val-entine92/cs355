@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 *{
   margin: 1px 1px;
   padding: 0px;
@@ -7,17 +8,12 @@
     sans-serif;
   font-size:1.2em; 
 }
-.bg-Img{
-display:flexbox;
-
-
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body{
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: 'Cabin', Sans-serif;
 }
 
 h1{
@@ -47,15 +43,14 @@ h1{
 }
 ul{
     display: flex;
-    flex-flow:row;
+    flex-flow:column;
     list-style-type: none;  
 }
 ul li{
     padding:8px 0;
 }
 ul li a{
-    
-    border-radius: 1em;
+    border-radius: .1em;
     text-decoration: none; 
     width: 10em;
     --fill:#c0dd92;
@@ -67,7 +62,7 @@ ul li a{
     background:linear-gradient(var(--fill) 0 100%) left/0 no-repeat;
     background-clip: text;
     color:transparent;
-    transition:1s linear;
+    transition:.5s linear;
 }
 ul li a:hover,:is(:active){
     -webkit-text-stroke-color: black;
@@ -91,16 +86,17 @@ background-color:#252525;
   align-content: center;
   justify-content: center;
   text-align: center;
+  width:100%;
 }
 .buttons{
     display: flex;
     justify-content:space-between;
-    margin-bottom: 1em;
+    margin-bottom: 1.7em;
 }
 button{
-    align-items: center;
-    border-radius:1em;
-    margin: 20px;
+    margin: 10%;
+    align-items:center;
+    border-radius:.5em;
     color:rgb(59, 52, 52);
     background-color:#c0dd92;
     justify-content: space-evenly;
@@ -123,6 +119,7 @@ button:hover{
 }
 
 .container2{
+    margin-top: 2em;
     height:100vh;
     width:100vw;
     max-height: 800px;
@@ -133,13 +130,13 @@ button:hover{
     margin-top: -20%;
     flex-direction: row;
     max-width:1200px;
-    min-height:600px;
+    min-height:400px;
     min-width:100px;
 }
 .border{
     height:300px;
     width:260px;
-    background: transparent;
+    background-color: transparent;
     border-radius: 10px;
     transition: border 1s;
     position: relative;
@@ -152,8 +149,8 @@ button:hover{
   /*transform: rotate(-1turn); 
  /*transform: rotate3d(0, 1, 4, 180deg);*/
     z-index: 1;
-    color: darkgreen;
-    background-color: #fff;
+    color: rgb(25, 29, 25);
+    background-color: #fafafa;
 }
 .card img{
     max-width:300px;

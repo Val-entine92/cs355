@@ -24,8 +24,8 @@ function clickMe(){
 
 }
 
-function changeColor(){
-  document.body.style.background="cadetblue";
+function clickAgain(){
+  document.body.style.background="black"
 }
 
 
